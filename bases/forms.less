@@ -1,0 +1,39 @@
+.form {
+	display: flex;
+	color: @colorD;
+	.border;
+	width: 800px;
+	padding: 0px;
+	
+}
+.form > div{
+	flex-grow: 1;
+	display:flex;
+	flex-direction: column;
+}
+.form label, button{
+	margin: 10px 0 10px 0;
+	font: 1em Helvetica;
+}
+.form div{
+	
+	padding: 15px;
+	text-align: left;
+}
+.form textarea {
+	height: 150px;
+	padding: 10px;
+	border: 1px solid @colorD;
+}
+
+.form input{
+	max-width: 75%;
+	height: 20px;
+	padding: 10px;
+	border: 1px solid @colorD;
+	-webkit-appearance: none;
+}
+.form input, textarea {
+	font: 1em georgia;
+	border-radius: 5px;
+}

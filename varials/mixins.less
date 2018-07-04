@@ -1,0 +1,68 @@
+//////////////////////////////////////////////////////
+///     Custom Mixins
+//////////////////////////////////////////////////////
+
+// Background Image
+.back-image(@image) {
+  background: url(@image) no-repeat 50% 20% ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: contain;
+  background-size: cover;
+}
+
+// Border 
+.border(@size: 1px, @color: black){
+	border: @size solid @color;
+}
+
+// Logo in Nav
+.logo{
+  background: url('../images/logo2.png') no-repeat center;
+  height: 50px;
+  text-indent: -15000px;
+   width: 170px;
+
+}
+
+
+.black a {
+  font-size: 0.7em;
+}
+
+// Rounded Item
+.round(@size: 5px){
+	border-radius: @size;
+	-moz-border-radius: @size;
+	-webkit-border-radius: @size;
+	border: 1px solid black;
+}
+
+// Center Box
+.center-block() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Box Shadow
+.box-shadow (@x: 0, @y: 3px, @blur: 5px, @spread: 0, @alpha: 0.5) {
+	-webkit-box-shadow: @x @y @blur @spread rgba(0, 0, 0, @alpha);
+	-moz-box-shadow:    @x @y @blur @spread rgba(0, 0, 0, @alpha);
+	box-shadow:         @x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+
+// Gradient Color
+.gradient{
+background: #ffffff; 
+background: -moz-linear-gradient(top, #ffffff 62%, rgba(0,0,0,0.9) 96%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffffff 62%, rgba(0,0,0,0.9) 96%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffffff 62%, rgba(0,0,0,0.9) 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr=' rgba(0,0,0,0.9)',GradientType=0 ); /* IE6-9 */
+}
+@color: black;
+@colorB: rgba(0,0,0,0.9); 
+@colorC: #595959;
+@colorD: #868A8B;
+
+// https://color.adobe.com/Peter-Zumthors-Therme-Vals-spa-Baths-01-color-theme-10553088/edit/?copy=true&base=2&rule=Custom&selected=4&name=Copy%20of%20Peter%20Zumthors%20Therme%20Vals%20spa%20%20Baths%2001&mode=rgb&rgbvalues=0.8431372549019608,0.8627450980392157,0.9490196078431372,0.6588235294117647,0.6784313725490196,0.7568627450980392,0.3764705882352941,0.4235294117647059,0.4627450980392157,0.5254901960784314,0.5411764705882353,0.5450980392156862,0.13571428571428573,0.1809523809523645,0.19&swatchOrder=0,1,2,3,4
